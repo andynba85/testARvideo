@@ -66,7 +66,7 @@
         this.toggle = false;
         this.vid.pause();
         }
-    },
+    }
     
     });
 </script>
@@ -168,11 +168,15 @@
 <button class="intro-button">Intro</button>
 <button class="video-button" visible="false">video</button>
 <script>
+    document.getElementById('video').addEventListener('click',function(){
+        document.getElementById('invitation').play();
+    })
+
     document.getElementById('intro-button').addEventListener('click',function(){
-    document.getElementById('video').setAttribute('visible',false);
-    document.getElementById('intro-button').setAttribute('visible',false);
-    document.getElementById('video-button').setAttribute('visible',true);
-    document.getElementById('introplane').setAttribute('visible',true);
+        document.getElementById('video').setAttribute('visible',false);
+        document.getElementById('intro-button').setAttribute('visible',false);
+        document.getElementById('video-button').setAttribute('visible',true);
+        document.getElementById('introplane').setAttribute('visible',true);
     })
 </script>
 
