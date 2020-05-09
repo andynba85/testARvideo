@@ -55,7 +55,7 @@
     <a-assets>
         <!-- Invitation  Video -->
         <video preload="auto" id="invitation" response-type="arraybuffer" loop="false" crossorigin webkit-playsinline playsinline controls>
-            <source  src="videos/park.mp4">
+            <source  src="video/park.mp4">
         </video>
 
         <!-- Map point Image -->
@@ -87,11 +87,11 @@
     <a-marker id="marker3" type='pattern' url='markers/map-pattern-marker.patt' emitevents="true" cursor="rayOrigin: mouse" mappoint-handler>
         <a-plane id="img-map" scale = "2 2" position='0 0.1 0' rotation="-90 0 0" material='transparent:true;src:#map-point'></a-plane>
     </a-marker>     
-    <button class="back-button">Back!</button>
-    <button class="intro-button">Intro</button>
-    <button class="video-button" visible="false">video</button>
     <a-entity camera></a-entity>
 </a-scene>
+<button class="back-button">Back!</button>
+<button class="intro-button">Intro</button>
+<button class="video-button" visible="false">video</button>
 <script>
     document.getElementById('intro-button').addEventListener('click',function(){
     document.getElementById('video').setAttribute('visible',false);
